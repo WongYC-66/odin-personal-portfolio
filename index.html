@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A personal portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -38,55 +37,55 @@
                 <img src="./img/Slide1.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Ipsum odio consequatur sed aspernatur. Qui perspiciatis dolores voluptas eum accusantium doloremque</p>
             </div>
             <div class="card">
                 <img src="./img/Slide2.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
                 <img src="./img/Slide3.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
                 <img src="./img/Slide4.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
                 <img src="./img/Slide5.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
                 <img src="./img/Slide6.PNG" alt="">
                 <div class="project-bar">
                     <h4>Project name</h4>
-                    <img src="./img/github-original.svg" alt="">
-                    <img src="./img/open-in-new.svg" alt="">
+                    <a href=""><img src="./img/github-original.svg" alt=""></a>
+                    <a href=""><img src="./img/open-in-new.svg" alt=""></a>
                 </div>
-                <p>project--description......</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
     </main>
@@ -111,8 +110,23 @@
                 </a>
             </div>
         </div>
-        <img src="./img/contact-me.jpg" alt="">
+        <div class="contact-photo"></div>
     </footer>
 </body>
+
+<script>
+    document.querySelectorAll('.project-bar > a:nth-of-type(1)').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            alert('You click an github link button')
+        })
+    })
+    document.querySelectorAll('.project-bar > a:nth-of-type(2)').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            alert('You click an open new tab link button')
+        })
+    })
+</script>
 
 </html>

@@ -94,7 +94,7 @@ main {
 
 .contents {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     justify-content: center;
 }
@@ -145,20 +145,18 @@ main {
 }
 
 footer {
-    flex-basis: 30%;
     background-color: rgb(12, 149, 174);
     padding: 50px;
     /*  */
     display: flex;
 }
 
-footer>img {
-    flex-basis: 65%;
-    max-width: 550px;
-    object-fit: cover;
+footer>div:last-child {
+    background: center / cover no-repeat url("./img/contact-me.jpg");
+    width: 100%;
 }
 
-footer>div {
+footer>div:first-child {
     color: white;
     padding: 0px 30px;
     /*  */
@@ -188,7 +186,9 @@ footer>div>p>img {
     width: 40px;
 }
 
-@media screen and (max-width: 550px) {
+/* mobile view */
+@media screen and (max-width: 600px) {
+
     header,
     footer {
         flex-direction: column;
@@ -229,12 +229,21 @@ footer>div>p>img {
     }
 
     main {
-        padding: 5px 5px;
+        padding: 5px 15px;
         margin: 100px 0;
     }
 
+    .card>*:last-child {
+        flex-basis: 100px;
+    }
+
     footer {
-        padding: 0;
+        padding: 30px 0 0 0;
+        gap: 50px;
+    }
+
+    footer>.contact-photo {
+        min-height: 550px;
     }
 
     footer>div {
@@ -246,6 +255,14 @@ footer>div>p>img {
     }
 
     footer>div>p>img {
-        visibility: hidden;
+        display: none;
     }
+}
+
+/* hover effect */
+.iconDiv img:hover,
+.card .project-bar img:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+
 }
