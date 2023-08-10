@@ -1,2 +1,2 @@
 # odin-personal-portfolio
-A portfolio website that implements Responsive Web Design (RWD)
+A simple portfolio website that implements Responsive Web Design (RWD)

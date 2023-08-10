@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+:root {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    /*  */
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    flex-basis: 30%;
+    background-color: aqua;
+    padding: 50px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+}
+
+header .name {
+    min-width: 300px;
+    transform: scaleY(1.15);
+    color: white;
+    text-shadow: 2px 2px 1.5px black;
+    font-size: 2rem;
+    background: center / cover no-repeat url("./img/about-me.jpg");
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-me {
+    background-color: white;
+    padding: 30px 15px;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.iconDiv {
+    /*  */
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.iconDiv img {
+    width: 30px;
+}
+.iconDiv img:last-child {
+    filter: invert(1);
+}
+
+main {
+    flex-basis: 40%;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: beige;
+}
+
+footer {
+    flex-basis: 30%;
+    background-color: aqua;
+}
+
+img {
+    /* width: 40px; */
+}
